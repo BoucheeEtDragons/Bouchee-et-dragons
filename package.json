@@ -1,0 +1,28 @@
+{
+  "name": "bouchee-et-dragons",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoucheeEtDragons/Bouchee-et-dragons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoucheeEtDragons/Bouchee-et-dragons/issues"
+  },
+  "homepage": "https://github.com/BoucheeEtDragons/Bouchee-et-dragons#readme",
+  "dependencies": {
+    "@BoucheeEtDragons/design-system": "^0.0.1"
+  }
+}
