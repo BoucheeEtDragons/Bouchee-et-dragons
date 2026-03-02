@@ -1,3 +1,4 @@
+"use strict";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -19,12 +20,42 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  hello: () => hello
+  Button: () => Button_default
 });
 module.exports = __toCommonJS(index_exports);
-var hello = () => "Hello world";
+
+// src/lib/enum/ThemeColor.ts
+var ThemeColor = /* @__PURE__ */ ((ThemeColor2) => {
+  ThemeColor2["PRIMARY"] = "bd-primary";
+  ThemeColor2["SECONDARY"] = "bd-secondary";
+  ThemeColor2["TERTIARY"] = "bd-tertiary";
+  return ThemeColor2;
+})(ThemeColor || {});
+var ThemeColor_default = ThemeColor;
+
+// src/Atom/Button/Button.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
+var Button = ({
+  color = ThemeColor_default.PRIMARY,
+  disabled = false,
+  children,
+  onClick,
+  type = "button"
+}) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    "button",
+    {
+      className: `bd-button ${color}`,
+      disabled,
+      onClick,
+      type,
+      children
+    }
+  );
+};
+var Button_default = Button;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  hello
+  Button
 });
 //# sourceMappingURL=index.cjs.map

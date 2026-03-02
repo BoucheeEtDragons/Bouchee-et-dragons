@@ -1,0 +1,155 @@
+:root {
+    /* -------------------------- General -------------------------- */
+    /* Colors */
+    --primary-color: #3E7CB1;
+    --secondary-color: #DA2C38;
+    --tertiary-color: #343633;
+
+    --white-color: #FFFFFF; /* Couleur blanche */
+    --black-color: var(--tertiary-color); /* Couleur noire */
+
+    /* Font sizes */
+    --font-size-base: 18px; /* 18px = 1rem */
+    --font-size-tiny: 0.75rem;
+    --font-size-small: 0.85rem;
+    --font-size-normal: 1rem;
+    --font-size-big: 1.15rem;
+    --font-size-giant: 1.25rem;
+
+    /* Fonts */
+    --font-title: "Tenor Sans", serif;
+    --font-normal: "Be Vietnam Pro", sans-serif;
+
+    /* States & effects */
+    --disabled-opacity: 0.5; /* Opacité par défaut lorsqu’un élément est désactivé */
+    --disabled-opacity-percent: 50%;
+
+    --disabled-white-filter-opacity: 0.5; /* Opacité du fond blanc en disabled */
+    --disabled-white-filter-opacity-percent: 50%;
+
+    --hover-white-filter-opacity: 0.2; /* Opacité du filtre blanc au hover */
+    --hover-white-filter-opacity-percent: 20%;
+
+    --disabled-brightness: 0.80; /** Valeur dans la méthode brightness à mettre pour un élément désactivé */
+    --disabled-brightness-percent: 80%;
+
+    --white-filter-color: #FFFFFF; /* Couleur du filtre blanc */
+
+    /* Layout */
+    --base-border-radius: 12px; /* Arrondissement de base des composants */
+
+    /* -------------------------- Boutons -------------------------- */
+    /* Button spacing */
+    --button-padding-y: 1.6rem; /* 29px */
+    --button-padding-x: 1.3rem; /* 24px */
+
+    /* Button focus */
+    --button-focus-border-size: 2px;
+    --button-focus-space-outside-button: 4px;
+    /* Espacement entre le ring de focus et le bouton */
+
+    /* Button states */
+    --button-hover-white-filter-opacity: var(--hover-white-filter-opacity);
+    /* Opacité du fond blanc au hover (≈ 20%) */
+
+    --button-disabled-whiteness: var(--disabled-white-filter-opacity);
+    --button-disabled-whiteness-percent: var(--disabled-white-filter-opacity-percent);
+
+    /* Button style */
+    --button-border-radius: var(--base-border-radius);
+    --button-font-color: var(--black-color);
+    --button-font-size-inner: var(--font-size-big);
+
+    /* Button background
+     Variante selon le contexte :
+     --primary-color | --secondary-color | --tertiary-color
+    */
+    --button-background-color: var(--primary-color);
+
+    --button-outline-offset: 2px;
+
+    /* -------------------------- Badges -------------------------- */
+    /* Badge shape */
+    --badge-border-radius: 999px;
+
+    /* Badge spacing */
+    --badge-padding-y: 1.2rem; /* 22px */
+    --badge-padding-x: 1.4rem; /* 26px */
+
+    /* Badge states */
+    --badge-hover-white-opacity: var(--hover-white-filter-opacity);
+    --badge-disabled-white-opacity: var(--disabled-white-filter-opacity);
+
+    /* Badge typography */
+    --badge-font-color: var(--black-color);
+    --badge-font-size-inner: var(--font-size-big);
+
+    /* Badge background
+     Variante selon le contexte :
+     --primary-color | --secondary-color | --tertiary-color
+    */
+    --badge-background-color: var(--primary-color);
+
+    /** Animations */
+    --transition-duration: 0.1s;
+    --transition-function: ease-out;
+
+    /* -------------------------- Input Fields -------------------------- */
+
+    /* Field spacing */
+    --field-padding-x: 1.2rem; /* 22px */
+    --field-padding-y: 1.3rem; /* 24px */
+
+    /* Field shape & stroke */
+    --field-border-radius: var(--base-border-radius);
+    --field-stroke-width: 1px;
+    --field-hover-stroke-width: 2px;
+
+    /* Field states */
+    --field-opacity: 1; /* 100% */
+    --field-disabled-white-opacity: var(--disabled-white-filter-opacity);
+
+    /* Field typography */
+    --field-text-size: var(--font-size-normal);
+    --field-active-font-color: var(--black-color);
+
+    /* Field font color
+     Variante selon le contexte :
+     --primary-color | --secondary-color | --tertiary-color
+    */
+    --field-font-color: var(--primary-color);
+
+    /* Field stroke colors
+         Variante selon le contexte :
+         --primary-color | --secondary-color | --tertiary-color
+      */
+    --field-active-stroke-color: var(--primary-color);
+    --field-hover-stroke-color: var(--primary-color);
+
+    /* -------------------------- Menu -------------------------- */
+    /* Menu button spacing */
+    --menu-button-padding-y: 1.6rem; /* 29px */
+    --menu-button-padding-x: 1.3rem; /* 24px */
+
+    /* Menu button shape */
+    --menu-button-border-radius: var(--base-border-radius);
+
+    /* Menu button states */
+    --menu-button-hover-white-opacity: var(--hover-white-filter-opacity);
+    /* 20% d’opacité du fond blanc appliqué au hover */
+
+    --menu-button-disabled-white-opacity: var(--disabled-white-filter-opacity);
+    /* 20% d’opacité du fond blanc appliqué au disabled */
+
+    /* Menu button colors */
+    --menu-button-background-color: var(--tertiary-color);
+    --menu-button-hover-background-color: var(--primary-color);
+    --menu-button-font-color: var(--white-color);
+    --menu-button-hover-font-color: var(--tertiary-color);
+
+    /* Focus */
+    --menu-button-focus-stroke-color: var(--primary-color);
+
+    /* Typography */
+    --menu-button-text-size: var(--font-size-normal);
+}

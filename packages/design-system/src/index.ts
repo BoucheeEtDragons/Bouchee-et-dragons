@@ -1,1 +1,5 @@
-export const hello = () => "Hello world";
+import "./global.css"
+
+import Button from "./Atom/Button/Button"
+
+export {Button}

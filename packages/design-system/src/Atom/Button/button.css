@@ -1,0 +1,50 @@
+.bd-button {
+    padding-top: var(--button-padding-y);
+    padding-bottom: var(--button-padding-y);
+    padding-left: var(--button-padding-x);
+    padding-right: var(--button-padding-x);
+
+    color: var(--button-font-color);
+    background: var(--button-background-color);
+    border-radius: var(--button-border-radius);
+
+    font-size: var(--button-font-size-inner);
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    transition: all var(--transition-duration) var(--transition-function);
+}
+
+.bd-button.bd-primary {
+    --button-background-color: var(--primary-color);
+}
+.bd-button.bd-secondary {
+    --button-background-color: var(--secondary-color);
+}
+.bd-button.bd-tertiary {
+    --button-background-color: var(--tertiary-color);
+    --button-font-color: var(--white-color);
+}
+
+.bd-button:hover {
+    background: color-mix(
+            in oklab,
+            var(--button-background-color) calc(100% - var(--hover-white-filter-opacity-percent)),
+            var(--white-color) var(--hover-white-filter-opacity-percent)
+    );
+}
+
+.bd-button:disabled {
+    filter: brightness(var(--disabled-brightness-percent));
+}
+
+.bd-button:disabled:hover {
+    background: var(--button-background-color) !important;
+    cursor: not-allowed;
+}
+
+.bd-button:focus {
+    outline: solid var(--button-focus-border-size);
+    outline-offset: var(--button-outline-offset);
+    outline-color: var(--button-background-color);
+}
