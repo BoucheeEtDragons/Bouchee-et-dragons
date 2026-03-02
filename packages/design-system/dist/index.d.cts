@@ -8,13 +8,27 @@ declare enum ThemeColor {
 
 type ButtonType = 'submit' | 'reset' | 'button';
 
-interface Props {
+interface Props$1 {
     color?: ThemeColor;
     disabled?: boolean;
     children?: React.ReactNode;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     type?: ButtonType;
 }
-declare const Button: React.FC<Props>;
+declare const Button: React.FC<Props$1>;
 
-export { Button };
+type FieldType = "text" | "email" | "password" | "number";
+
+interface Props {
+    color?: ThemeColor;
+    label?: string;
+    placeholder?: string;
+    value?: string;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
+    disabled?: boolean;
+    name?: string;
+    type?: FieldType;
+}
+declare const Field: React.FC<Props>;
+
+export { Button, Field };

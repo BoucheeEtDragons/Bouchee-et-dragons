@@ -1,4 +1,5 @@
 import {Button} from "@BoucheeEtDragons/design-system";
+import {Field} from "@BoucheeEtDragons/design-system";
 import ThemeColor from "@BoucheeEtDragons/design-system/src/lib/enum/ThemeColor.ts";
 
 export default function App() {
@@ -52,6 +53,67 @@ export default function App() {
                         Hello
                     </Button>
                 </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h1>Field</h1>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>Primary</th>
+                <th>Secondary</th>
+                <th>Tertiary</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Normal</td>
+                <td>
+                  <Field
+                        placeholder="Field"
+                        color={ThemeColor.PRIMARY}
+                    />
+                </td>
+                <td>
+                    <Field
+                        placeholder="Field"
+                        color={ThemeColor.SECONDARY}
+                    />
+                </td>
+                <td>
+                    <Field
+                        placeholder="Field"
+                        color={ThemeColor.TERTIARY}
+                    />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Disabled</td>
+                <td>
+                    <Field
+                        placeholder="Field"
+                        color={ThemeColor.PRIMARY}
+                        disabled
+                    />
+                </td>
+                <td>
+                    <Field
+                        placeholder="Field"
+                        color={ThemeColor.SECONDARY}
+                        disabled
+                    />
+                </td>              
+               <td>
+                    <Field
+                        placeholder="Field"
+                        color={ThemeColor.TERTIARY}
+                        disabled
+                    />
+                </td>
+    
             </tr>
             </tbody>
         </table>
