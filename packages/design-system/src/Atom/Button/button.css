@@ -1,8 +1,8 @@
 .bd-button {
-    padding-top: var(--button-padding-y);
-    padding-bottom: var(--button-padding-y);
-    padding-left: var(--button-padding-x);
-    padding-right: var(--button-padding-x);
+    padding-top: calc(var(--button-padding-y) / 2);
+    padding-bottom: calc(var(--button-padding-y) / 2);
+    padding-left: calc(var(--button-padding-x) / 2);
+    padding-right: calc(var(--button-padding-x) / 2);
 
     color: var(--button-font-color);
     background: var(--button-background-color);
