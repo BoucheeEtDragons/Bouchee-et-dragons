@@ -3,6 +3,7 @@ import "./menuItem.css";
 import PriceMenu from "../../Atom/PriceMenu/PriceMenu";
 import DescriptionMenu from "../../Atom/DescriptionMenu/DescriptionMenu";
 import TitleMenu from "../../Atom/TitleMenu/TitleMenu";
+import Bar from "../../Atom/Bar/Bar";
 
 interface Props {
     title: string,
@@ -28,6 +29,7 @@ const MenuItem: React.FC<Props> = ({
             <DescriptionMenu>
                 {description}
             </DescriptionMenu>
+            <Bar/>
             
         </div>
     )
