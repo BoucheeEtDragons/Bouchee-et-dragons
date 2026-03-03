@@ -10,14 +10,14 @@ interface Props {
     price: number,
 }
 
-const Menu: React.FC<Props> = ({
+const MenuItem: React.FC<Props> = ({
     title,
     description,
     price,
 }) => {
     return (
-        <div className={"bd-menu"}>
-            <div className={"bd-menu-header"}>
+        <div className={"bd-menu-item"}>
+            <div className={"bd-menu-item-header"}>
                 <TitleMenu>
                     {title}
                 </TitleMenu>
@@ -33,4 +33,4 @@ const Menu: React.FC<Props> = ({
     )
 };
 
-export default Menu;
+export default MenuItem;

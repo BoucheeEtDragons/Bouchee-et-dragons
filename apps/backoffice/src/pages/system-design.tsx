@@ -1,4 +1,4 @@
-import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, Menu, TitleMenu} from "../packages/index";
+import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, TitleMenu, MenuItem} from "../packages/index";
 import ThemeColor from "../packages/lib/enum/ThemeColor.ts";
 import {Navbar} from "../packages";
 
@@ -413,7 +413,7 @@ export default function SystemDesign() {
                   <tr>
                       <td>Normal</td>
                       <td>
-                          <Menu  title="Burger" description="Delicious burger" price={10} />
+                          <MenuItem  title="Burger" description="Delicious burger" price={10} />
                       </td>
                     </tr>
                   </tbody>
