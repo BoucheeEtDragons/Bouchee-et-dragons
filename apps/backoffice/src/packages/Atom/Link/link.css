@@ -1,0 +1,28 @@
+.bd-link {
+    font-size: var(--font-size-small);
+    font-family: var(--font-normal);
+    color: var(--link-font-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-duration) var(--transition-function);
+}
+
+.bd-link.bd-primary {
+    --link-font-color: var(--primary-color);
+}
+
+.bd-link.bd-secondary {
+    --link-font-color: var(--secondary-color);
+}
+
+.bd-link.bd-tertiary {
+    --link-font-color: var(--tertiary-color);
+}
+
+.bd-link.underline {
+    text-decoration: underline;
+}
+
+.bd-link:hover {
+    opacity: var(--hover-opacity-percent);
+}

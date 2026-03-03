@@ -1,4 +1,4 @@
-import {Badge, Button, Field, Label, Input} from "./packages/index";
+import {Badge, Button, Field, Label, Input, Link} from "./packages/index";
 import ThemeColor from "./packages/lib/enum/ThemeColor.ts";
 import {Image} from "./packages/Atom/Image/Image.tsx";
 
@@ -259,6 +259,59 @@ export default function App() {
                             disabled
                             name="input-tertiary-disabled"
                         />
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>Link</summary>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Primary</th>
+                    <th>Secondary</th>
+                    <th>Tertiary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>
+                        <Link color={ThemeColor.PRIMARY} href="#">
+                            Link
+                        </Link>
+                    </td>
+                    <td>
+                        <Link color={ThemeColor.SECONDARY} href="#">
+                            Link
+                        </Link>
+                    </td>
+                    <td>
+                        <Link color={ThemeColor.TERTIARY} href="#">
+                            Link
+                        </Link>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Underline</td>
+                    <td>
+                        <Link color={ThemeColor.PRIMARY} href="#" underline>
+                            Link
+                        </Link>
+                    </td>
+                    <td>
+                        <Link color={ThemeColor.SECONDARY} href="#" underline>
+                            Link
+                        </Link>
+                    </td>
+                    <td>
+                        <Link color={ThemeColor.TERTIARY} href="#" underline>
+                            Link
+                        </Link>
                     </td>
                 </tr>
                 </tbody>
