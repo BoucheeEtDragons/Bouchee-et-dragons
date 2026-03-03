@@ -160,4 +160,7 @@
     /* -------------------------- Container -------------------------- */
     --container-max-width: 1200px;
     --container-padding: 1rem;
+
+    /* -------------------------- PriceMenu -------------------------- */
+    --badge-padding-x: 8rem;
 }
