@@ -1,5 +1,6 @@
 import {Badge, Button, Field, Label, Input} from "./packages/index";
 import ThemeColor from "./packages/lib/enum/ThemeColor.ts";
+import {Image} from "./packages/Atom/Image/Image.tsx";
 
 export default function App() {
   return (
@@ -263,6 +264,33 @@ export default function App() {
                 </tbody>
             </table>
         </details>
+
+        <details>
+            <summary>Image</summary>
+
+            <table>
+                <thead>
+                <tr>
+                    <td>Image</td>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <Image
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/cc/3-BerneseMountainDogInGrass.jpg"
+                            style={{
+                                width: 250,
+                                height: 250
+                            }}
+                        />
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </details>
     </div>
+
   )
 }
