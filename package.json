@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/BoucheeEtDragons/Bouchee-et-dragons#readme",
   "dependencies": {
-    "@BoucheeEtDragons/design-system": "^0.0.1"
+    "@BoucheeEtDragons/design-system": "^0.0.1",
+    "clsx": "^2.1.1"
   }
 }
