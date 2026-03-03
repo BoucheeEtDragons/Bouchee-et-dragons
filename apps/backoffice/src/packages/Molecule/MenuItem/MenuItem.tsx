@@ -6,17 +6,20 @@ import TitleMenu from "../../Atom/TitleMenu/TitleMenu";
 import { Image } from "../../Atom/Image/Image";
 import Bar from "../../Atom/Bar/Bar";
 import placeholderImage from "../../../assets/burger_classic.jpeg";
+import ThemeColor from "../../lib/enum/ThemeColor.ts";
 
 interface Props {
     title: string,
     description: string,
     price: number,
+    barColor?: ThemeColor,
 }
 
 const MenuItem: React.FC<Props> = ({
     title,
     description,
     price,
+    barColor = ThemeColor.PRIMARY,
 }) => {
     return (
         <div className={"bd-menu-item"}>
@@ -40,7 +43,7 @@ const MenuItem: React.FC<Props> = ({
                     {price}€
                 </PriceMenu>
             </div>
-            <Bar height={3}/>
+            <Bar height={3} color={barColor}/>
         </div>
     )
 };

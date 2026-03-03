@@ -53,7 +53,7 @@ export default function MenuPage() {
             </Heading>
 
             <div className={'bd-menu-section bd-secondary'}>
-              <Menu items={[
+              <Menu color={ThemeColor.SECONDARY} items={[
                 { title: "Burger", description: "Delicious burger", price: 10 },
                 { title: "Pizza", description: "Delicious pizza", price: 12 },
                 { title: "Tacos", description: "Delicious tacos", price: 8 },
