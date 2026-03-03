@@ -1,4 +1,4 @@
-import {Badge, Button, Field} from "./packages/index";
+import {Badge, Button, DescriptionMenu, Field, TittleMenu, PriceMenu} from "./packages/index";
 import ThemeColor from "./packages/lib/enum/ThemeColor.ts";
 
 export default function App() {
@@ -172,6 +172,108 @@ export default function App() {
                         />
                     </td>
 
+                </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>TittleMenu</summary>
+
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Primary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>
+                        <TittleMenu
+                            color={ThemeColor.PRIMARY}
+                        >
+                            Tittle Menu
+                        </TittleMenu>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>TittleMenu</summary>
+
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Primary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>
+                        <TittleMenu
+                            color={ThemeColor.PRIMARY}
+                        >
+                            Tittle Menu
+                        </TittleMenu>
+                    </td>
+                
+                </tr>
+
+                
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>DescriptionMenu</summary>
+
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Primary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>
+                        <DescriptionMenu
+                            color={ThemeColor.PRIMARY}
+                        >
+                            Description Menu
+                        </DescriptionMenu>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </details>
+        <details>
+            <summary>PriceMenu</summary>
+
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Primary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>
+                        <PriceMenu
+                            color={ThemeColor.PRIMARY}
+                        >
+                            50
+                        </PriceMenu>
+                    </td>
                 </tr>
                 </tbody>
             </table>
