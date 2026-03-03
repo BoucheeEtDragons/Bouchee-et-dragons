@@ -14,7 +14,7 @@ export default function Login() {
           <Navbar />
           <Container>
               <div className="login-page">
-                  <h1>Connexion</h1>
+                  <h1 className="login-title">Connexion</h1>
                   <LoginForm onSubmit={handleLogin} />
               </div>
           </Container>

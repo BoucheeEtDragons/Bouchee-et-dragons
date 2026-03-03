@@ -1,6 +1,6 @@
 .bd-label {
     font-size: var(--font-size-small);
-    font-family: var(--font-normal);
+    font-family: var(--font-title);
     color: var(--label-font-color);
     user-select: none;
 }
