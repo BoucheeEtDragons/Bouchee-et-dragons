@@ -1,5 +1,5 @@
 .bd-link {
-    font-size: var(--font-size-small);
+    font-size: var(--text-size-s);
     font-family: var(--font-normal);
     color: var(--link-font-color);
     text-decoration: none;

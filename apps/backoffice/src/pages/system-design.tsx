@@ -1,8 +1,13 @@
-import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, TitleMenu, MenuItem, Bar} from "../packages/index";
+import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, TitleMenu, MenuItem, Bar, Navbar, Menu} from "../packages/index";
 import ThemeColor from "../packages/lib/enum/ThemeColor.ts";
-import {Navbar, Menu} from "../packages";
+import {Heading} from "../packages/Atom/Heading/Heading.tsx";
+import FontVariant from "../packages/lib/enum/FontVariant.ts";
+import type {HeadingLevel} from "../packages/lib/type/HeadingLevel.ts";
 
 export default function SystemDesign() {
+  const headings = [1,2,3,4,5,6]
+  const fontVariants = Object.entries(FontVariant)
+
   return (
       <div>
           <h1>Backoffice</h1>
@@ -401,7 +406,7 @@ export default function SystemDesign() {
               </table>
           </details>
           <details>
-              <summary>MenuItem</summary>
+              <summary>Menu</summary>
               <table>
                   <thead>
                   <tr>
@@ -420,17 +425,37 @@ export default function SystemDesign() {
               </table>
           </details>
 
-           <details>
-                <summary>Menu</summary>
-                <Menu items={[
-                    { title: "Burger", description: "Delicious burger", price: 10 },
-                    { title: "Pizza", description: "Delicious pizza", price: 12 },
-                ]} />
-            </details>
-            <details>
-                <summary>Bar</summary>
+          <details>
+              <summary>MenuItem</summary>
+              <table>
+                  <thead>
+                  <tr>
+                      <th></th>
+                      <th>Primary</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Normal</td>
+                      <td>
+                          <MenuItem  title="Burger" description="Delicious burger" price={10} />
+                      </td>
+                  </tr>
+                  </tbody>
+              </table>
+          </details>
 
-                <table>
+          <details>
+              <summary>Menu</summary>
+              <Menu items={[
+                  { title: "Burger", description: "Delicious burger", price: 10 },
+                  { title: "Pizza", description: "Delicious pizza", price: 12 },
+              ]} />
+          </details>
+          <details>
+              <summary>Bar</summary>
+
+              <table>
                   <thead>
                   <tr>
                       <th></th>
@@ -446,8 +471,50 @@ export default function SystemDesign() {
                   </tr>
                   </tbody>
               </table>
-                
-            </details>
+
+          </details>
+
+          <details>
+              <summary>Headings</summary>
+              <table>
+                  <thead>
+                  <tr>
+                      <th></th>
+                      <th>h1</th>
+                      <th>h2</th>
+                      <th>h3</th>
+                      <th>h4</th>
+                      <th>h5</th>
+                      <th>h6</th>
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  {
+                      fontVariants.map(([variantName, fontVariant]) => {
+                          return (
+                              <tr key={variantName}>
+                                  <td>{variantName}</td>
+
+                                  {headings.map((level) => (
+                                      <td
+                                          key={`${variantName}-h${level}`}
+                                      >
+                                          <Heading
+                                              level={level as HeadingLevel}
+                                              variant={fontVariant}
+                                          >
+                                              H{level}
+                                          </Heading>
+                                      </td>
+                                  ))}
+                              </tr>
+                          )
+                      })
+                  }
+                  </tbody>
+              </table>
+          </details>
       </div>
   )
 }

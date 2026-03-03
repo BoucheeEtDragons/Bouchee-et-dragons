@@ -1,0 +1,23 @@
+h1.bd-heading {
+    font-size: var(--text-size-h1);
+}
+
+h2.bd-heading {
+    font-size: var(--text-size-h2);
+}
+
+h3.bd-heading {
+    font-size: var(--text-size-h3);
+}
+
+h4.bd-heading {
+    font-size: var(--text-size-h4);
+}
+
+h5.bd-heading {
+    font-size: var(--text-size-h5);
+}
+
+h6.bd-heading {
+    font-size: var(--text-size-h6);
+}
