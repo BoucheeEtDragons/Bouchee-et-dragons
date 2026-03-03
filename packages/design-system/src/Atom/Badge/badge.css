@@ -1,0 +1,48 @@
+.bd-badge {
+    border-radius: var(--badge-border-radius);
+    color: var(--badge-font-color);
+    background: var(--badge-background-color);
+
+    font-size: var(--badge-font-size-inner);
+    font-family: var(--font-normal);
+
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    transition: all var(--transition-duration) var(--transition-function);
+
+    padding-top: var(--badge-padding-y);
+    padding-bottom: var(--badge-padding-y);
+    padding-left: var(--badge-padding-x);
+    padding-right: var(--badge-padding-x);
+
+    display: block;
+    width: fit-content;
+}
+
+.bd-badge.bd-primary {
+    --badge-background-color: var(--primary-color);
+}
+.bd-badge.bd-secondary {
+    --badge-background-color: var(--secondary-color);
+}
+.bd-badge.bd-tertiary {
+    --badge-background-color: var(--tertiary-color);
+    --badge-font-color: var(--white-color);
+}
+
+.bd-badge:not(.bd-badge-disabled):hover {
+    background: color-mix(
+            in oklab,
+            var(--badge-background-color) calc(100% - var(--hover-white-filter-opacity-percent)),
+            var(--white-color) var(--hover-white-filter-opacity-percent)
+    );
+}
+
+.bd-badge.bd-badge-disabled {
+    filter: brightness(var(--disabled-brightness-percent));
+}
+
+.bd-badge.bd-badge-disabled:hover {
+    cursor: not-allowed;
+}

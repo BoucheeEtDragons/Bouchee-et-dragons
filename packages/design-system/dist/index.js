@@ -30,11 +30,9 @@ var Button = ({
 var Button_default = Button;
 
 // src/Atom/Field/Field.tsx
-import { useId } from "react";
-import { jsx as jsx2, jsxs } from "react/jsx-runtime";
+import { jsx as jsx2 } from "react/jsx-runtime";
 var Field = ({
   color = ThemeColor_default.PRIMARY,
-  label,
   placeholder,
   value,
   onChange,
@@ -42,27 +40,46 @@ var Field = ({
   name,
   type = "text"
 }) => {
-  const generatedId = useId();
-  const id = name ?? generatedId;
-  return /* @__PURE__ */ jsxs("div", { className: `bd-field ${color}`, children: [
-    label && /* @__PURE__ */ jsx2("label", { htmlFor: id, className: "bd-field-label", children: label }),
-    /* @__PURE__ */ jsx2(
-      "input",
-      {
-        id,
-        className: "bd-field-input",
-        type,
-        placeholder,
-        value,
-        onChange,
-        disabled,
-        name
-      }
-    )
-  ] });
+  return /* @__PURE__ */ jsx2("div", { className: `bd-field ${color}`, children: /* @__PURE__ */ jsx2(
+    "input",
+    {
+      className: "bd-field-input",
+      type,
+      placeholder,
+      value,
+      onChange,
+      disabled,
+      name
+    }
+  ) });
 };
 var Field_default = Field;
+
+// src/Atom/Badge/Badge.tsx
+import { jsx as jsx3 } from "react/jsx-runtime";
+var Badge = ({
+  color = ThemeColor_default.PRIMARY,
+  children,
+  onClick,
+  disabled = false
+}) => {
+  const disabledClass = disabled ? "bd-badge-disabled" : null;
+  return /* @__PURE__ */ jsx3(
+    "span",
+    {
+      className: [
+        `bd-badge`,
+        color,
+        disabledClass
+      ].join(" "),
+      onClick,
+      children
+    }
+  );
+};
+var Badge_default = Badge;
 export {
+  Badge_default as Badge,
   Button_default as Button,
   Field_default as Field
 };
