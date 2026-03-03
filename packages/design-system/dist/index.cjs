@@ -20,9 +20,9 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
+  Badge: () => Badge_default,
   Button: () => Button_default,
-  Field: () => Field_default,
-  Label: () => Label_default
+  Field: () => Field_default
 });
 module.exports = __toCommonJS(index_exports);
 
@@ -83,27 +83,33 @@ var Field = ({
 };
 var Field_default = Field;
 
-// src/Atom/Label/Label.tsx
+// src/Atom/Badge/Badge.tsx
 var import_jsx_runtime3 = require("react/jsx-runtime");
-var Label = ({
-  color = ThemeColor_default.TERTIARY,
+var Badge = ({
+  color = ThemeColor_default.PRIMARY,
   children,
-  htmlFor
+  onClick,
+  disabled = false
 }) => {
+  const disabledClass = disabled ? "bd-badge-disabled" : null;
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
-    "label",
+    "span",
     {
-      className: `bd-label ${color}`,
-      htmlFor,
+      className: [
+        `bd-badge`,
+        color,
+        disabledClass
+      ].join(" "),
+      onClick,
       children
     }
   );
 };
-var Label_default = Label;
+var Badge_default = Badge;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  Badge,
   Button,
-  Field,
-  Label
+  Field
 });
 //# sourceMappingURL=index.cjs.map

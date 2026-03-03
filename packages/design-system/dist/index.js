@@ -55,26 +55,32 @@ var Field = ({
 };
 var Field_default = Field;
 
-// src/Atom/Label/Label.tsx
+// src/Atom/Badge/Badge.tsx
 import { jsx as jsx3 } from "react/jsx-runtime";
-var Label = ({
-  color = ThemeColor_default.TERTIARY,
+var Badge = ({
+  color = ThemeColor_default.PRIMARY,
   children,
-  htmlFor
+  onClick,
+  disabled = false
 }) => {
+  const disabledClass = disabled ? "bd-badge-disabled" : null;
   return /* @__PURE__ */ jsx3(
-    "label",
+    "span",
     {
-      className: `bd-label ${color}`,
-      htmlFor,
+      className: [
+        `bd-badge`,
+        color,
+        disabledClass
+      ].join(" "),
+      onClick,
       children
     }
   );
 };
-var Label_default = Label;
+var Badge_default = Badge;
 export {
+  Badge_default as Badge,
   Button_default as Button,
-  Field_default as Field,
-  Label_default as Label
+  Field_default as Field
 };
 //# sourceMappingURL=index.js.map

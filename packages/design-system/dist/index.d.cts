@@ -33,8 +33,9 @@ declare const Field: React.FC<Props$1>;
 interface Props {
     color?: ThemeColor;
     children?: React.ReactNode;
-    htmlFor?: string;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    disabled?: boolean;
 }
-declare const Label: React.FC<Props>;
+declare const Badge: React.FC<Props>;
 
-export { Button, Field, Label };
+export { Badge, Button, Field };
