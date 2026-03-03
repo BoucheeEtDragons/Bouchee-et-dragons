@@ -1,8 +1,14 @@
 import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, TitleMenu, MenuItem} from "../packages/index";
 import ThemeColor from "../packages/lib/enum/ThemeColor.ts";
 import {Navbar} from "../packages";
+import {Heading} from "../packages/Atom/Heading/Heading.tsx";
+import FontVariant from "../packages/lib/enum/FontVariant.ts";
+import type {HeadingLevel} from "../packages/lib/type/HeadingLevel.ts";
 
 export default function SystemDesign() {
+  const headings = [1,2,3,4,5,6]
+  const fontVariants = Object.entries(FontVariant)
+
   return (
       <div>
           <h1>Backoffice</h1>
@@ -416,6 +422,45 @@ export default function SystemDesign() {
                           <MenuItem  title="Burger" description="Delicious burger" price={10} />
                       </td>
                     </tr>
+                  </tbody>
+              </table>
+          </details>
+          <details>
+              <summary>Headings</summary>
+              <table>
+                  <thead>
+                  <tr>
+                      <th></th>
+                      <th>h1</th>
+                      <th>h2</th>
+                      <th>h3</th>
+                      <th>h4</th>
+                      <th>h5</th>
+                      <th>h6</th>
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  {
+                      fontVariants.map(([variantName, fontVariant]) => {
+                          return (
+                              <tr>
+                                  <td>{variantName}</td>
+
+                                  {headings.map((level) => (
+                                      <td>
+                                          <Heading
+                                              level={level as HeadingLevel}
+                                              variant={fontVariant}
+                                          >
+                                              H{level}
+                                          </Heading>
+                                      </td>
+                                  ))}
+                              </tr>
+                          )
+                      })
+                  }
                   </tbody>
               </table>
           </details>

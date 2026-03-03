@@ -176,3 +176,11 @@ html {
     /* -------------------------- Images -------------------------- */
     --image-round: 2rem;
 }
+
+.bd-font-normal {
+    font-family: var(--font-normal);
+}
+
+.bd-font-title {
+    font-family: var(--font-title);
+}
