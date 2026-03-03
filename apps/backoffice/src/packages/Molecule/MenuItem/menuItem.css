@@ -1,0 +1,17 @@
+.bd-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    padding: 12px;
+    border-radius: var(--border-radius);
+
+    background-color: var(--white-color);
+}
+
+.bd-menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
