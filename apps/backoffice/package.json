@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev:vanilla": "vite",
-    "dev": "npm run dev:vanilla -w @BoucheeEtDragons/backoffice",
+    "dev": "npm run dev:vanilla",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@BoucheeEtDragons/design-system": "^0.0.1",
+    "clsx": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.1"

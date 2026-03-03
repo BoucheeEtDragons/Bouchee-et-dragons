@@ -9,7 +9,7 @@ interface Props {
 
 const Bar: React.FC<Props> = ({
     color = ThemeColor.PRIMARY,
-    height = 2,
+    height = 1,
 }) => {
     return (
         <div

@@ -5,7 +5,7 @@ import DescriptionMenu from "../../Atom/DescriptionMenu/DescriptionMenu";
 import TitleMenu from "../../Atom/TitleMenu/TitleMenu";
 import { Image } from "../../Atom/Image/Image";
 import Bar from "../../Atom/Bar/Bar";
-import placeholderImage from "../../../assets/react.svg";
+import placeholderImage from "../../../assets/burger_classic.jpeg";
 
 interface Props {
     title: string,
@@ -21,7 +21,13 @@ const MenuItem: React.FC<Props> = ({
     return (
         <div className={"bd-menu-item"}>
             <div className={"bd-menu-item-header"}>
-                <Image className="bd-menu-item-image" src={placeholderImage} alt={title} />
+                <Image
+                    className="bd-menu-item-image"
+                    src={placeholderImage}
+                    alt={title}
+                    width={80}
+                    height={80}
+                />
                 <div className={"bd-menu-item-content"}>
                     <TitleMenu>
                         {title}
