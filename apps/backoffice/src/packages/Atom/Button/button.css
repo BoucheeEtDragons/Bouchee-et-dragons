@@ -4,12 +4,13 @@
     padding-left: var(--button-padding-x);
     padding-right: var(--button-padding-x);
 
-    color: var(--button-font-color);
+    color: var(--white-color);
     background: var(--button-background-color);
     border-radius: var(--button-border-radius);
 
     font-size: var(--button-font-size-inner);
     font-family: var(--font-normal);
+    font-weight: 600;
 
     cursor: pointer;
     user-select: none;
