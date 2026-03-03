@@ -1,0 +1,18 @@
+.bd-label {
+    font-size: var(--font-size-small);
+    font-family: var(--font-normal);
+    color: var(--label-font-color);
+    user-select: none;
+}
+
+.bd-label.bd-primary {
+    --label-font-color: var(--primary-color);
+}
+
+.bd-label.bd-secondary {
+    --label-font-color: var(--secondary-color);
+}
+
+.bd-label.bd-tertiary {
+    --label-font-color: var(--tertiary-color);
+}
