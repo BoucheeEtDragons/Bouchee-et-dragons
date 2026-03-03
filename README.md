@@ -38,9 +38,3 @@ Nos boutons sont volontairement grands pour plusieurs raisons :
 | 🎲 Thème D&D | Les dés se lancent avec conviction — les boutons doivent inspirer la même confiance |
 | ♿ Accessibilité (WCAG A) | Minimum **44px × 44px** pour les zones tactiles |
 | 📐 Padding | 16px-24px (vertical/horizontal) pour un confort visuel optimal |
-
----
-
-## Install
-
-Please set an environment variable named "GITHUB_TOKEN" with a github token as a value.
