@@ -1,0 +1,24 @@
+.bd-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.bd-login-form__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bd-login-form__forgot {
+    text-align: right;
+}
+
+.bd-login-form__submit {
+    display: flex;
+    justify-content: center;
+}
+
+.bd-login-form__submit .bd-button {
+    width: 100%;
+}

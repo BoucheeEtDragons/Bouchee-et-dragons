@@ -1,0 +1,10 @@
+.bd-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    padding: 12px;
+    border-radius: var(--border-radius);
+
+    background-color: var(--white-color);
+}

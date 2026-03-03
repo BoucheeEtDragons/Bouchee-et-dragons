@@ -19,6 +19,10 @@
     --link-font-color: var(--tertiary-color);
 }
 
+.bd-link.bd-white {
+    --link-font-color: var(--white-color);
+}
+
 .bd-link.underline {
     text-decoration: underline;
 }

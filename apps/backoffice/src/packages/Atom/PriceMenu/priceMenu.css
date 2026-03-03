@@ -1,5 +1,6 @@
 .bd-price-menu {
     font-size: var(--text-size-l);
     font-family: var(--font-normal);
+    margin-left: var(--badge-padding-x);
 }
 
