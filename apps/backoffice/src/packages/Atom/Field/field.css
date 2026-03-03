@@ -32,6 +32,10 @@
   box-sizing: border-box;
 }
 
+.bd-field-input::-webkit-input-placeholder {
+  font-family: var(--font-title), serif;
+}
+
 .bd-field.bd-primary {
   --field-active-stroke-color: var(--primary-color);
   --field-hover-stroke-color: var(--primary-color);

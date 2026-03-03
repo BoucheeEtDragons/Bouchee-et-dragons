@@ -1,12 +1,11 @@
 import LoginForm from "../../packages/Component/LoginForm/LoginForm.tsx";
 import {Navbar} from "../../packages";
 import Container from "../../packages/Atom/Container/Container.tsx";
-import {redirect} from "react-router-dom";
 import "./login.css"
 
 export default function Login() {
   const handleLogin = () => {
-    redirect(`/`);
+     console.log("trying to login :)");
   };
 
   return (
