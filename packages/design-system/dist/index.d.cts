@@ -17,12 +17,18 @@ interface Props$1 {
 }
 declare const Button: React.FC<Props$1>;
 
+type FieldType = "text" | "email" | "password" | "number";
+
 interface Props {
     color?: ThemeColor;
-    children?: React.ReactNode;
-    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    label?: string;
+    placeholder?: string;
+    value?: string;
+    onChange?: React.ChangeEventHandler<HTMLInputElement>;
     disabled?: boolean;
+    name?: string;
+    type?: FieldType;
 }
-declare const Badge: React.FC<Props>;
+declare const Field: React.FC<Props>;
 
-export { Badge, Button };
+export { Button, Field };
