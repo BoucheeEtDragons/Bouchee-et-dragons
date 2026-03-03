@@ -1,4 +1,4 @@
-import {Badge, Button, Field, Label} from "./packages/index";
+import {Badge, Button, Field, Label, Input} from "./packages/index";
 import ThemeColor from "./packages/lib/enum/ThemeColor.ts";
 
 export default function App() {
@@ -184,6 +184,81 @@ export default function App() {
                         />
                     </td>
 
+                </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>Input</summary>
+
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Primary</th>
+                    <th>Secondary</th>
+                    <th>Tertiary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>
+                        <Input
+                            label="Label"
+                            placeholder="Input"
+                            fieldColor={ThemeColor.PRIMARY}
+                            name="input-primary"
+                        />
+                    </td>
+                    <td>
+                        <Input
+                            label="Label"
+                            placeholder="Input"
+                            fieldColor={ThemeColor.SECONDARY}
+                            name="input-secondary"
+                        />
+                    </td>
+                    <td>
+                        <Input
+                            label="Label"
+                            placeholder="Input"
+                            fieldColor={ThemeColor.TERTIARY}
+                            name="input-tertiary"
+                        />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Disabled</td>
+                    <td>
+                        <Input
+                            label="Label"
+                            placeholder="Input"
+                            fieldColor={ThemeColor.PRIMARY}
+                            disabled
+                            name="input-primary-disabled"
+                        />
+                    </td>
+                    <td>
+                        <Input
+                            label="Label"
+                            placeholder="Input"
+                            fieldColor={ThemeColor.SECONDARY}
+                            disabled
+                            name="input-secondary-disabled"
+                        />
+                    </td>
+                    <td>
+                        <Input
+                            label="Label"
+                            placeholder="Input"
+                            fieldColor={ThemeColor.TERTIARY}
+                            disabled
+                            name="input-tertiary-disabled"
+                        />
+                    </td>
                 </tr>
                 </tbody>
             </table>
