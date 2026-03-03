@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Menu from './pages/menu.tsx'
-import Login from './pages/login.tsx'
+import Login from './pages/login/login.tsx'
 import SystemDesign from './pages/system-design.tsx'
 
 createRoot(document.getElementById('root')!).render(
