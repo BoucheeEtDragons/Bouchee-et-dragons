@@ -2,11 +2,11 @@
 
 ## Contexte du projet
 
-**Bouchée et Dragons** est un site web de commande de nourriture à destination des joueurs de jeux de rôle, centré sur le thème **Donjons & Dragons**.
+**Bouchée et Dragons** est un site web de restaurant à destination des joueurs de jeux de rôle, centré sur le thème **Donjons & Dragons**.
 
 ### Le concept : commander en lançant les dés
 
-Pour apporter une touche de hasard et d'amusement, les clients doivent **lancer des dés** pour passer leur commande. Cette mécanique rappelle les jets de dés emblématiques de D&D et transforme une simple commande en une expérience ludique.
+Pour apporter une touche de hasard et d'amusement, les clients doivent **lancer des dés** pour passer leur commande. Comme dans D&D et transforme une simple commande en une "expérience".
 
 ---
 
