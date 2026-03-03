@@ -10,6 +10,14 @@ Pour apporter une touche de hasard et d'amusement, les clients doivent **lancer 
 
 ---
 
+## Pages réalisées
+
+Les pages réalisées sont la page de connexion avec son formulaire et la page Menu pour visualiser les différents plats :
+/menu
+/login
+/system-design
+---
+
 ## Choix Graphiques
 
 ### Palette de couleurs
