@@ -20,7 +20,9 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  Button: () => Button_default
+  Badge: () => Badge_default,
+  Button: () => Button_default,
+  Field: () => Field_default
 });
 module.exports = __toCommonJS(index_exports);
 
@@ -54,8 +56,60 @@ var Button = ({
   );
 };
 var Button_default = Button;
+
+// src/Atom/Field/Field.tsx
+var import_jsx_runtime2 = require("react/jsx-runtime");
+var Field = ({
+  color = ThemeColor_default.PRIMARY,
+  placeholder,
+  value,
+  onChange,
+  disabled = false,
+  name,
+  type = "text"
+}) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: `bd-field ${color}`, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+    "input",
+    {
+      className: "bd-field-input",
+      type,
+      placeholder,
+      value,
+      onChange,
+      disabled,
+      name
+    }
+  ) });
+};
+var Field_default = Field;
+
+// src/Atom/Badge/Badge.tsx
+var import_jsx_runtime3 = require("react/jsx-runtime");
+var Badge = ({
+  color = ThemeColor_default.PRIMARY,
+  children,
+  onClick,
+  disabled = false
+}) => {
+  const disabledClass = disabled ? "bd-badge-disabled" : null;
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+    "span",
+    {
+      className: [
+        `bd-badge`,
+        color,
+        disabledClass
+      ].join(" "),
+      onClick,
+      children
+    }
+  );
+};
+var Badge_default = Badge;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button
+  Badge,
+  Button,
+  Field
 });
 //# sourceMappingURL=index.cjs.map

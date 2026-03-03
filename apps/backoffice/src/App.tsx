@@ -20,7 +20,7 @@ export default function App() {
                 <tr>
                     <td>Normal</td>
                     <td>
-                        <Button color={ThemeColor.PRIMARY} size={"l"}>
+                        <Button color={ThemeColor.PRIMARY}>
                             Hello
                         </Button>
                     </td>

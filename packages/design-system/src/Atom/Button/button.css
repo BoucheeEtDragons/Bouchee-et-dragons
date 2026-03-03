@@ -9,6 +9,8 @@
     border-radius: var(--button-border-radius);
 
     font-size: var(--button-font-size-inner);
+    font-family: var(--font-normal);
+
     cursor: pointer;
     user-select: none;
     border: none;
