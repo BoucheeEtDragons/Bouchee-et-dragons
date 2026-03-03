@@ -34,7 +34,6 @@ Nos boutons sont volontairement grands pour plusieurs raisons :
 | Facteur | Explication |
 |---------|-------------|
 | 🍔 Contexte fast-food | Les utilisateurs peuvent avoir les doigts gras ou être occupés à manger |
-| 📱 Usage mobile | Des zones tactiles généreuses = moins d'erreurs et meilleure expérience |
 | 🎲 Thème D&D | Les dés se lancent avec conviction — les boutons doivent inspirer la même confiance |
 | ♿ Accessibilité (WCAG A) | Minimum **44px × 44px** pour les zones tactiles |
 | 📐 Padding | 16px-24px (vertical/horizontal) pour un confort visuel optimal |
