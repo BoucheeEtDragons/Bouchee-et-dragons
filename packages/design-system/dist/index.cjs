@@ -21,7 +21,8 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var index_exports = {};
 __export(index_exports, {
   Button: () => Button_default,
-  Field: () => Field_default
+  Field: () => Field_default,
+  Label: () => Label_default
 });
 module.exports = __toCommonJS(index_exports);
 
@@ -57,11 +58,9 @@ var Button = ({
 var Button_default = Button;
 
 // src/Atom/Field/Field.tsx
-var import_react = require("react");
 var import_jsx_runtime2 = require("react/jsx-runtime");
 var Field = ({
   color = ThemeColor_default.PRIMARY,
-  label,
   placeholder,
   value,
   onChange,
@@ -69,29 +68,42 @@ var Field = ({
   name,
   type = "text"
 }) => {
-  const generatedId = (0, import_react.useId)();
-  const id = name ?? generatedId;
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: `bd-field ${color}`, children: [
-    label && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("label", { htmlFor: id, className: "bd-field-label", children: label }),
-    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
-      "input",
-      {
-        id,
-        className: "bd-field-input",
-        type,
-        placeholder,
-        value,
-        onChange,
-        disabled,
-        name
-      }
-    )
-  ] });
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: `bd-field ${color}`, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+    "input",
+    {
+      className: "bd-field-input",
+      type,
+      placeholder,
+      value,
+      onChange,
+      disabled,
+      name
+    }
+  ) });
 };
 var Field_default = Field;
+
+// src/Atom/Label/Label.tsx
+var import_jsx_runtime3 = require("react/jsx-runtime");
+var Label = ({
+  color = ThemeColor_default.TERTIARY,
+  children,
+  htmlFor
+}) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+    "label",
+    {
+      className: `bd-label ${color}`,
+      htmlFor,
+      children
+    }
+  );
+};
+var Label_default = Label;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Button,
-  Field
+  Field,
+  Label
 });
 //# sourceMappingURL=index.cjs.map

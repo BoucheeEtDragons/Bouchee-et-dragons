@@ -1,5 +1,4 @@
-import {Button} from "@BoucheeEtDragons/design-system";
-import {Field} from "@BoucheeEtDragons/design-system";
+import {Button, Field, Label} from "@BoucheeEtDragons/design-system";
 import ThemeColor from "@BoucheeEtDragons/design-system/src/lib/enum/ThemeColor.ts";
 
 export default function App() {
@@ -71,21 +70,27 @@ export default function App() {
             <tr>
                 <td>Normal</td>
                 <td>
-                  <Field
+                    <Label color={ThemeColor.PRIMARY} htmlFor="field-primary">Label</Label>
+                    <Field
                         placeholder="Field"
                         color={ThemeColor.PRIMARY}
+                        name="field-primary"
                     />
                 </td>
                 <td>
+                    <Label color={ThemeColor.SECONDARY} htmlFor="field-secondary">Label</Label>
                     <Field
                         placeholder="Field"
                         color={ThemeColor.SECONDARY}
+                        name="field-secondary"
                     />
                 </td>
                 <td>
+                    <Label color={ThemeColor.TERTIARY} htmlFor="field-tertiary">Label</Label>
                     <Field
                         placeholder="Field"
                         color={ThemeColor.TERTIARY}
+                        name="field-tertiary"
                     />
                 </td>
             </tr>
@@ -93,27 +98,33 @@ export default function App() {
             <tr>
                 <td>Disabled</td>
                 <td>
+                    <Label color={ThemeColor.PRIMARY} htmlFor="field-primary-disabled">Label</Label>
                     <Field
                         placeholder="Field"
                         color={ThemeColor.PRIMARY}
                         disabled
+                        name="field-primary-disabled"
                     />
                 </td>
                 <td>
+                    <Label color={ThemeColor.SECONDARY} htmlFor="field-secondary-disabled">Label</Label>
                     <Field
                         placeholder="Field"
                         color={ThemeColor.SECONDARY}
                         disabled
+                        name="field-secondary-disabled"
                     />
-                </td>              
+                </td>
                <td>
+                    <Label color={ThemeColor.TERTIARY} htmlFor="field-tertiary-disabled">Label</Label>
                     <Field
                         placeholder="Field"
                         color={ThemeColor.TERTIARY}
                         disabled
+                        name="field-tertiary-disabled"
                     />
                 </td>
-    
+
             </tr>
             </tbody>
         </table>

@@ -135,6 +135,7 @@
   border: var(--field-stroke-width) solid var(--field-active-stroke-color);
   outline: none;
   transition: all var(--transition-duration) var(--transition-function);
+  box-sizing: border-box;
 }
 .bd-field.bd-primary {
   --field-active-stroke-color: var(--primary-color);
@@ -158,9 +159,6 @@
 .bd-field-input:focus {
   border-width: var(--field-hover-stroke-width);
   border-color: var(--field-active-stroke-color);
-  outline: solid var(--button-focus-border-size);
-  outline-offset: var(--button-outline-offset);
-  outline-color: var(--field-active-stroke-color);
 }
 .bd-field-input::placeholder {
   color: color-mix(in oklab, var(--black-color) 40%, transparent);
@@ -172,5 +170,22 @@
 }
 .bd-field-input:disabled:hover {
   border-color: var(--field-active-stroke-color);
+}
+
+/* src/Atom/Label/label.css */
+.bd-label {
+  font-size: var(--font-size-small);
+  font-family: var(--font-normal);
+  color: var(--label-font-color);
+  user-select: none;
+}
+.bd-label.bd-primary {
+  --label-font-color: var(--primary-color);
+}
+.bd-label.bd-secondary {
+  --label-font-color: var(--secondary-color);
+}
+.bd-label.bd-tertiary {
+  --label-font-color: var(--tertiary-color);
 }
 /*# sourceMappingURL=index.css.map */
