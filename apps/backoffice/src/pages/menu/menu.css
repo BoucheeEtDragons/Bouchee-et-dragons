@@ -1,8 +1,29 @@
-.bd-menu__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--black-color);
-    font-family: var(--font-title);
+#main-page-title {
+    margin-bottom: 2rem;
+}
+
+.bd-main-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    --container-padding-y: 3rem;
+}
+
+.bd-menu-container {
+    position: relative;
+    background: color-mix(
+        in srgb,
+        var(--container-bg-color) 25%,
+        transparent
+    );
+}
+
+.bd-menu-container.bd-primary {
+    --container-bg-color: var(--primary-color);
+}
+.bd-menu-container.bd-secondary {
+    --container-bg-color: var(--secondary-color);
+}
+.bd-menu-container.bd-tertiary {
+    --container-bg-color: var(--tertiary-color);
 }

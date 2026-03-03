@@ -1,5 +1,6 @@
 .bd-title-menu {
     font-size: var(--text-size-l);
     font-family: var(--font-title);
+    --heading-font-color: var(--black-color)
 }
 

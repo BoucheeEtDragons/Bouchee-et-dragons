@@ -3,12 +3,21 @@ import "./bar.css";
 import ThemeColor from "../../lib/enum/ThemeColor";
 
 interface Props {
-  color?: ThemeColor;
+    color?: ThemeColor,
+    height?: number,
 }
 
-const Bar: React.FC<Props> = ({ color }) => {
+const Bar: React.FC<Props> = ({
+    color = ThemeColor.PRIMARY,
+    height = 1,
+}) => {
     return (
-        <div className={`bd-bar ${color}`} />
+        <div
+            className={`bd-bar ${color}`}
+            style={{
+                height: height
+            }}
+        />
     )
 };
 

@@ -1,3 +1,7 @@
+.bd-heading {
+    color: var(--heading-font-color);
+}
+
 h1.bd-heading {
     font-size: var(--text-size-h1);
 }
@@ -20,4 +24,17 @@ h5.bd-heading {
 
 h6.bd-heading {
     font-size: var(--text-size-h6);
+}
+
+.bd-heading.bd-primary {
+    --heading-font-color: var(--primary-color);
+}
+.bd-heading.bd-secondary {
+    --heading-font-color: var(--secondary-color);
+}
+.bd-heading.bd-tertiary {
+    --heading-font-color: var(--tertiary-color);
+}
+.bd-heading.bd-black {
+    --heading-font-color: var(--black-color);
 }

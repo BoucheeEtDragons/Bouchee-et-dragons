@@ -72,6 +72,8 @@ html {
     /* Font weight value for the title font (light) */
     --font-title-weight-light: 300;
 
+    --heading-font-color: var(--primary-color);
+
     /* -------------------------- Boutons -------------------------- */
     /* Button spacing */
     --button-padding-y: 0.8rem; /* 29px */
@@ -101,6 +103,10 @@ html {
     --button-background-color: var(--primary-color);
 
     --button-outline-offset: 2px;
+
+    /* -------------------------- Bar -------------------------- */
+    --bar-bg-color: var(--black-color);
+    --bar-radius: 999px;
 
     /* -------------------------- Badges -------------------------- */
     /* Badge shape */
@@ -192,7 +198,10 @@ html {
 
     /* -------------------------- Container -------------------------- */
     --container-max-width: 1200px;
-    --container-padding: 1rem;
+    --container-padding-x: 1rem;
+    --container-padding-y: 1.5rem;
+
+    --container-bg-color: var(--white-color);
 }
 
 .bd-font-normal {
@@ -219,6 +228,10 @@ html {
 }
 .bd-font-title.bd-font-weight-light {
     font-weight: var(--font-title-weight-light);
+}
+
+.bd-text-center {
+    text-align: center;
 }
 
 h1,h2,h3,h4,h5,h6 {

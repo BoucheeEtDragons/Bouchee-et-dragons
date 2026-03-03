@@ -6,14 +6,15 @@
     padding: 12px;
     border-radius: var(--border-radius);
 
-    background-color: var(--white-color);
+    background-color: transparent;
 }
 
 .bd-menu-item-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    margin-bottom: 12px;
 }
 
 .bd-menu-item-content {
@@ -27,4 +28,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.bd-menu-item-image {
+    width: 3.5rem;
+    height: 3.5rem;
 }
