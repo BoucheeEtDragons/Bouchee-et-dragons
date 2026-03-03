@@ -58,6 +58,20 @@ html {
     --text-size-normal: var(--text-size-m);
     --text-size-small: var(--text-size-xs);
 
+    /* Font weight value for the normal font (bold) */
+    --font-normal-weight-bold: 700;
+    /* Font weight value for the normal font (regular) */
+    --font-normal-weight-normal: 400;
+    /* Font weight value for the normal font (light) */
+    --font-normal-weight-light: 300;
+
+    /* Font weight value for the title font (bold) */
+    --font-title-weight-bold: 800;
+    /* Font weight value for the title font (regular) */
+    --font-title-weight-normal: 400;
+    /* Font weight value for the title font (light) */
+    --font-title-weight-light: 300;
+
     /* -------------------------- Boutons -------------------------- */
     /* Button spacing */
     --button-padding-y: 0.8rem; /* 29px */
@@ -184,9 +198,27 @@ html {
 .bd-font-normal {
     font-family: var(--font-normal);
 }
+.bd-font-normal.bd-font-weight-bold {
+    font-weight: var(--font-normal-weight-bold);
+}
+.bd-font-normal.bd-font-weight-normal {
+    font-weight: var(--font-normal-weight-normal);
+}
+.bd-font-normal.bd-font-weight-light {
+    font-weight: var(--font-normal-weight-light);
+}
 
 .bd-font-title {
     font-family: var(--font-title);
+}
+.bd-font-title.bd-font-weight-bold {
+    font-weight: var(--font-title-weight-bold);
+}
+.bd-font-title.bd-font-weight-normal {
+    font-weight: var(--font-title-weight-normal);
+}
+.bd-font-title.bd-font-weight-light {
+    font-weight: var(--font-title-weight-light);
 }
 
 h1,h2,h3,h4,h5,h6 {
