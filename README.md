@@ -2,7 +2,7 @@
 
 ## Contexte du projet
 
-**Bouchée et Dragons** est un site web de restaurant à destination des joueurs de jeux de rôle, centré sur le thème **Donjons & Dragons**.
+**Bouchée et Dragons** est un site web de restaurant(fast food) à destination des joueurs de jeux de rôle, centré sur le thème **Donjons & Dragons**. Sur le site ou dans le restaurant les clients peuvent acheter de la nourriture comme par exemple des burgers, frites, pizza... .
 
 ### Le concept : commander en lançant les dés
 
