@@ -6,7 +6,7 @@
     padding: 12px;
     border-radius: var(--border-radius);
 
-    background-color: var(--white-color);
+    background-color: transparent;
 }
 
 .bd-menu-item-header {

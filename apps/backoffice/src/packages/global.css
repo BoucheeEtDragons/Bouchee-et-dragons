@@ -200,6 +200,8 @@ html {
     --container-max-width: 1200px;
     --container-padding-x: 1rem;
     --container-padding-y: 1.5rem;
+
+    --container-bg-color: var(--white-color);
 }
 
 .bd-font-normal {

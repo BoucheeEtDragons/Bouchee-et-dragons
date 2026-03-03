@@ -1,7 +1,6 @@
 import React from "react";
 import "./menu.css";
 import MenuItem from "../../Molecule/MenuItem/MenuItem";
-import {Button} from "../../index.ts";
 
 interface MenuItem {
     title: string,
@@ -11,10 +10,12 @@ interface MenuItem {
 
 interface Props {
     items: MenuItem[],
+    children?: React.ReactNode,
 }
 
 const Menu: React.FC<Props> = ({
     items,
+    children
 }) => {
     return (
         <>
@@ -25,9 +26,7 @@ const Menu: React.FC<Props> = ({
             </div>
 
             <div className={"bd-menu-actions"}>
-                <Button>
-                    Réserver
-                </Button>
+                {children}
             </div>
         </>
     )
