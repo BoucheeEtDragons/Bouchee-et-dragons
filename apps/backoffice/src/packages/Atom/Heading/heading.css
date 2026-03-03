@@ -35,3 +35,6 @@ h6.bd-heading {
 .bd-heading.bd-tertiary {
     --heading-font-color: var(--tertiary-color);
 }
+.bd-heading.bd-black {
+    --heading-font-color: var(--black-color);
+}

@@ -13,12 +13,14 @@ interface Props {
     description: string,
     price: number,
     barColor?: ThemeColor,
+    titleColor?: ThemeColor,
 }
 
 const MenuItem: React.FC<Props> = ({
     title,
     description,
     price,
+    titleColor = ThemeColor.BLACK,
     barColor = ThemeColor.PRIMARY,
 }) => {
     return (
@@ -32,7 +34,7 @@ const MenuItem: React.FC<Props> = ({
                     height={80}
                 />
                 <div className={"bd-menu-item-content"}>
-                    <TitleMenu>
+                    <TitleMenu color={titleColor}>
                         {title}
                     </TitleMenu>
                     <DescriptionMenu>
