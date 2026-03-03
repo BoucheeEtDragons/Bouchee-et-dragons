@@ -1,5 +1,6 @@
 import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, TitleMenu, MenuItem} from "../packages/index";
 import ThemeColor from "../packages/lib/enum/ThemeColor.ts";
+import {Navbar} from "../packages";
 
 export default function SystemDesign() {
   return (
@@ -341,6 +342,11 @@ export default function SystemDesign() {
                   </tbody>
               </table>
           </details>
+
+            <details>
+                <summary>Navbar</summary>
+                <Navbar />
+            </details>
 
           <details>
               <summary>Link</summary>
