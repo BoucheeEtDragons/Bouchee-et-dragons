@@ -1,0 +1,39 @@
+{
+    "menu": [
+      {
+        "id": 1,
+        "nom": "Classic Burger",
+        "description": "Steak haché 100% bœuf, cheddar fondant, laitue, tomate, cornichons et sauce maison.",
+        "prix": 8.90,
+        "image": "./assets/classic-burger.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Chicken Crispy",
+        "description": "Filet de poulet pané croustillant, salade fraîche et sauce mayonnaise.",
+        "prix": 9.50,
+        "image": "./assets/chicken-crispy.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Menu Double Cheese",
+        "description": "Double steak, double cheddar, sauce burger, servi avec frites et boisson au choix.",
+        "prix": 12.90,
+        "image": "./assets/double-cheese.jpg"
+      },
+      {
+        "id": 4,
+        "nom": "Frites XL",
+        "description": "Grande portion de frites dorées et croustillantes.",
+        "prix": 3.50,
+        "image": "./assets/frites-xl.jpg"
+      },
+      {
+        "id": 5,
+        "nom": "Milkshake Vanille",
+        "description": "Milkshake onctueux à la vanille préparé avec de la glace artisanale.",
+        "prix": 4.20,
+        "image": "./assets/milkshake-vanille.jpg"
+      }
+    ]
+}
