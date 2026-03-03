@@ -1,7 +1,7 @@
 import ThemeColor from "../../lib/enum/ThemeColor";
 import "./button.css";
 import React from "react";
-import {ButtonType} from "../../lib/type/ButtonType";
+import type {ButtonType} from "../../lib/type/ButtonType";
 
 interface Props {
     color?: ThemeColor,

@@ -1,5 +1,5 @@
-import {Badge, Button, Field} from "@BoucheeEtDragons/design-system";
-import ThemeColor from "@BoucheeEtDragons/design-system/src/lib/enum/ThemeColor.ts";
+import {Badge, Button, Field} from "./packages/index";
+import ThemeColor from "./packages/lib/enum/ThemeColor.ts";
 
 export default function App() {
   return (
