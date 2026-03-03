@@ -1,4 +1,4 @@
-.bd-menu {
+.bd-menu-item {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -9,7 +9,7 @@
     background-color: var(--white-color);
 }
 
-.bd-menu-header {
+.bd-menu-item-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
