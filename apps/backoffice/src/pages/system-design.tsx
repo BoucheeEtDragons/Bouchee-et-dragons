@@ -444,11 +444,13 @@ export default function SystemDesign() {
                   {
                       fontVariants.map(([variantName, fontVariant]) => {
                           return (
-                              <tr>
+                              <tr key={variantName}>
                                   <td>{variantName}</td>
 
                                   {headings.map((level) => (
-                                      <td>
+                                      <td
+                                          key={`${variantName}-h${level}`}
+                                      >
                                           <Heading
                                               level={level as HeadingLevel}
                                               variant={fontVariant}
