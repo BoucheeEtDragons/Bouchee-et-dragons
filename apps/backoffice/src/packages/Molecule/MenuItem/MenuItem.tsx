@@ -21,7 +21,7 @@ const MenuItem: React.FC<Props> = ({
     return (
         <div className={"bd-menu-item"}>
             <div className={"bd-menu-item-header"}>
-                <Image src={placeholderImage} alt={title} />
+                <Image src={placeholderImage} alt={title} width={80} height={80} />
                 <div className={"bd-menu-item-content"}>
                     <TitleMenu>
                         {title}
