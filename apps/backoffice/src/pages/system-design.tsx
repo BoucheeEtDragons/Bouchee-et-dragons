@@ -1,4 +1,4 @@
-import {Badge, Button, Field, Label, Link, Input, TittleMenu, PriceMenu, DescriptionMenu} from "../packages/index";
+import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, Menu, TitleMenu} from "../packages/index";
 import ThemeColor from "../packages/lib/enum/ThemeColor.ts";
 
 export default function SystemDesign() {
@@ -203,11 +203,11 @@ export default function SystemDesign() {
                   <tr>
                       <td>Normal</td>
                       <td>
-                          <TittleMenu
+                          <TitleMenu
                               color={ThemeColor.PRIMARY}
                           >
-                              Tittle Menu
-                          </TittleMenu>
+                              Title Menu
+                          </TitleMenu>
                       </td>
                   </tr>
                   </tbody>
@@ -391,6 +391,25 @@ export default function SystemDesign() {
                           </Link>
                       </td>
                   </tr>
+                  </tbody>
+              </table>
+          </details>
+          <details>
+              <summary>Menu</summary>
+              <table>
+                  <thead>
+                  <tr>
+                      <th></th>
+                      <th>Primary</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Normal</td>
+                      <td>
+                          <Menu  title="Burger" description="Delicious burger" price={10} />
+                      </td>
+                    </tr>
                   </tbody>
               </table>
           </details>
