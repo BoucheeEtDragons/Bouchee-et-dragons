@@ -8,13 +8,21 @@ declare enum ThemeColor {
 
 type ButtonType = 'submit' | 'reset' | 'button';
 
-interface Props {
+interface Props$1 {
     color?: ThemeColor;
     disabled?: boolean;
     children?: React.ReactNode;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     type?: ButtonType;
 }
-declare const Button: React.FC<Props>;
+declare const Button: React.FC<Props$1>;
 
-export { Button };
+interface Props {
+    color?: ThemeColor;
+    children?: React.ReactNode;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    disabled?: boolean;
+}
+declare const Badge: React.FC<Props>;
+
+export { Badge, Button };

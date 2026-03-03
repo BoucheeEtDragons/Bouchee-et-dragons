@@ -28,7 +28,32 @@ var Button = ({
   );
 };
 var Button_default = Button;
+
+// src/Atom/Badge/Badge.tsx
+import { jsx as jsx2 } from "react/jsx-runtime";
+var Badge = ({
+  color = ThemeColor_default.PRIMARY,
+  children,
+  onClick,
+  disabled = false
+}) => {
+  const disabledClass = disabled ? "bd-badge-disabled" : null;
+  return /* @__PURE__ */ jsx2(
+    "span",
+    {
+      className: [
+        `bd-badge`,
+        color,
+        disabledClass
+      ].join(" "),
+      onClick,
+      children
+    }
+  );
+};
+var Badge_default = Badge;
 export {
+  Badge_default as Badge,
   Button_default as Button
 };
 //# sourceMappingURL=index.js.map

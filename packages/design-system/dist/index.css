@@ -36,8 +36,8 @@
   --button-background-color: var(--primary-color);
   --button-outline-offset: 2px;
   --badge-border-radius: 999px;
-  --badge-padding-y: 1.2rem;
-  --badge-padding-x: 1.4rem;
+  --badge-padding-y: 0.9rem;
+  --badge-padding-x: 1.5rem;
   --badge-hover-white-opacity: var(--hover-white-filter-opacity);
   --badge-disabled-white-opacity: var(--disabled-white-filter-opacity);
   --badge-font-color: var(--black-color);
@@ -72,10 +72,10 @@
 
 /* src/Atom/Button/button.css */
 .bd-button {
-  padding-top: calc(var(--button-padding-y) / 2);
-  padding-bottom: calc(var(--button-padding-y) / 2);
-  padding-left: calc(var(--button-padding-x) / 2);
-  padding-right: calc(var(--button-padding-x) / 2);
+  padding-top: var(--button-padding-y);
+  padding-bottom: var(--button-padding-y);
+  padding-left: var(--button-padding-x);
+  padding-right: var(--button-padding-x);
   color: var(--button-font-color);
   background: var(--button-background-color);
   border-radius: var(--button-border-radius);
@@ -109,5 +109,42 @@
   outline: solid var(--button-focus-border-size);
   outline-offset: var(--button-outline-offset);
   outline-color: var(--button-background-color);
+}
+
+/* src/Atom/Badge/badge.css */
+.bd-badge {
+  border-radius: var(--badge-border-radius);
+  color: var(--badge-font-color);
+  background: var(--badge-background-color);
+  font-size: var(--badge-font-size-inner);
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: all var(--transition-duration) var(--transition-function);
+  padding-top: var(--badge-padding-y);
+  padding-bottom: var(--badge-padding-y);
+  padding-left: var(--badge-padding-x);
+  padding-right: var(--badge-padding-x);
+  display: block;
+  width: fit-content;
+}
+.bd-badge.bd-primary {
+  --badge-background-color: var(--primary-color);
+}
+.bd-badge.bd-secondary {
+  --badge-background-color: var(--secondary-color);
+}
+.bd-badge.bd-tertiary {
+  --badge-background-color: var(--tertiary-color);
+  --badge-font-color: var(--white-color);
+}
+.bd-badge:not(.bd-badge-disabled):hover {
+  background: color-mix(in oklab, var(--badge-background-color) calc(100% - var(--hover-white-filter-opacity-percent)), var(--white-color) var(--hover-white-filter-opacity-percent));
+}
+.bd-badge.bd-badge-disabled {
+  filter: brightness(var(--disabled-brightness-percent));
+}
+.bd-badge.bd-badge-disabled:hover {
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=index.css.map */
