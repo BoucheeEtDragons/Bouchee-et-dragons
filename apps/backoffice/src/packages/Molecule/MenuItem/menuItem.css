@@ -12,6 +12,19 @@
 .bd-menu-item-header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.bd-menu-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.bd-menu-item-text {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
 }
