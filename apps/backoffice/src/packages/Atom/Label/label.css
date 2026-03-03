@@ -1,5 +1,5 @@
 .bd-label {
-    font-size: var(--font-size-small);
+    font-size: var(--text-size-s);
     font-family: var(--font-normal);
     color: var(--label-font-color);
     user-select: none;
