@@ -1,5 +1,6 @@
 :root {
     /* -------------------------- General -------------------------- */
+
     /* Colors */
     --primary-color: #3E7CB1;
     --secondary-color: #DA2C38;
@@ -17,7 +18,7 @@
     --font-size-giant: 1.25rem;
 
     /* Fonts */
-    --font-title: "Tenor Sans", serif;
+    --font-title: "Cinzel", serif;
     --font-normal: "Be Vietnam Pro", sans-serif;
 
     /* States & effects */
