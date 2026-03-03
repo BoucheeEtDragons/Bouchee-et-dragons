@@ -23,7 +23,7 @@
   --disabled-brightness-percent: 80%;
   --white-filter-color: #FFFFFF;
   --base-border-radius: 12px;
-  --button-padding-y: 1.6rem;
+  --button-padding-y: 0.8rem;
   --button-padding-x: 1.3rem;
   --button-focus-border-size: 2px;
   --button-focus-space-outside-button: 4px;
@@ -36,7 +36,7 @@
   --button-background-color: var(--primary-color);
   --button-outline-offset: 2px;
   --badge-border-radius: 999px;
-  --badge-padding-y: 0.9rem;
+  --badge-padding-y: 0.45rem;
   --badge-padding-x: 1.5rem;
   --badge-hover-white-opacity: var(--hover-white-filter-opacity);
   --badge-disabled-white-opacity: var(--disabled-white-filter-opacity);
