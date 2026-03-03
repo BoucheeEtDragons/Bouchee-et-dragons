@@ -1,5 +1,5 @@
 import React from "react";
-import "./menu.css";
+import "./menuItem.css";
 import PriceMenu from "../../Atom/PriceMenu/PriceMenu";
 import DescriptionMenu from "../../Atom/DescriptionMenu/DescriptionMenu";
 import TitleMenu from "../../Atom/TitleMenu/TitleMenu";
