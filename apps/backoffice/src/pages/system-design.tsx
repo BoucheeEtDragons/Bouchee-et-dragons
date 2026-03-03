@@ -1,6 +1,6 @@
-import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, TitleMenu, MenuItem} from "../packages/index";
+import {Badge, Button, Field, Label, Link, Input, PriceMenu, DescriptionMenu, TitleMenu, MenuItem, Bar} from "../packages/index";
 import ThemeColor from "../packages/lib/enum/ThemeColor.ts";
-import {Navbar} from "../packages";
+import {Navbar, Menu} from "../packages";
 
 export default function SystemDesign() {
   return (
@@ -401,7 +401,7 @@ export default function SystemDesign() {
               </table>
           </details>
           <details>
-              <summary>Menu</summary>
+              <summary>MenuItem</summary>
               <table>
                   <thead>
                   <tr>
@@ -419,6 +419,35 @@ export default function SystemDesign() {
                   </tbody>
               </table>
           </details>
+
+           <details>
+                <summary>Menu</summary>
+                <Menu items={[
+                    { title: "Burger", description: "Delicious burger", price: 10 },
+                    { title: "Pizza", description: "Delicious pizza", price: 12 },
+                ]} />
+            </details>
+            <details>
+                <summary>Bar</summary>
+
+                <table>
+                  <thead>
+                  <tr>
+                      <th></th>
+                      <th>Primary</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>Normal</td>
+                      <td>
+                          <Bar color={ThemeColor.PRIMARY}/>
+                      </td>
+                  </tr>
+                  </tbody>
+              </table>
+                
+            </details>
       </div>
   )
 }
