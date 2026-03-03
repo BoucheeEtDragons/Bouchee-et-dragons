@@ -6,9 +6,10 @@ import Badge from "./Atom/Badge/Badge";
 import Label from "./Atom/Label/Label";
 import Link from "./Atom/Link/Link";
 import Input from "./Molecule/Input/Input";
-import TittleMenu from "./Atom/TittleMenu/TittleMenu";
+import TitleMenu from "./Atom/TitleMenu/TitleMenu";
 import DescriptionMenu from "./Atom/DescriptionMenu/DescriptionMenu";
 import PriceMenu from "./Atom/PriceMenu/PriceMenu";
+import Menu from "./Molecule/Menu/Menu";
 import Navbar from "./Component/Navbar/Navbar";
 
-export {Button, Field, Badge, TittleMenu, DescriptionMenu, PriceMenu, Label, Link, Input, Navbar}
+export {Button, Field, Badge, TitleMenu, DescriptionMenu, PriceMenu, Label, Link, Input, Menu, Navbar}

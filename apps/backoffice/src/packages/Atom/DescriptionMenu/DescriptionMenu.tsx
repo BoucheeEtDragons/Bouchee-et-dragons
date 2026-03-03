@@ -7,15 +7,15 @@ interface Props {
     children?: React.ReactNode,
 }
 
-const PriceMenu: React.FC<Props> = ({
+const DescriptionMenu: React.FC<Props> = ({
     color = ThemeColor.PRIMARY,
     children,
 }) => {
     return (
-        <div className={`bd-price-menu ${color}`}>
+        <div className={`bd-description-menu ${color}`}>
             {children}
         </div>
     )
 }
 
-export default PriceMenu
+export default DescriptionMenu
