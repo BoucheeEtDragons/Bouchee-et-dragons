@@ -153,4 +153,7 @@
 
     /* Typography */
     --menu-button-text-size: var(--font-size-normal);
+
+    /* -------------------------- Images -------------------------- */
+    --image-round: 2rem;
 }
