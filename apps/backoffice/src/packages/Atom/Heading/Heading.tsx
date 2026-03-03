@@ -4,6 +4,7 @@ import type {HeadingLevel} from "../../lib/type/HeadingLevel.ts";
 import FontVariant from "../../lib/enum/FontVariant.ts";
 import FontWeight from "../../lib/enum/FontWeight.ts";
 import "./heading.css"
+import clsx from "clsx";
 
 interface Props {
     level: HeadingLevel,
@@ -11,6 +12,7 @@ interface Props {
     children?: React.ReactNode,
     variant?: FontVariant,
     weight?: FontWeight,
+    className?: string,
     [key: string]: any
 }
 
@@ -20,6 +22,7 @@ export const Heading: React.FC<Props> = ({
     children,
     variant = FontVariant.TITLE,
     weight = FontWeight.NORMAL,
+    className,
     ...props
 }) => {
     const HeadingInner = `h${level}` as keyof JSX.IntrinsicElements;
@@ -33,7 +36,7 @@ export const Heading: React.FC<Props> = ({
 
     return (
         <HeadingInner
-            className={classes.join(' ')}
+            className={clsx(classes.join(' '), className)}
             {...props}
         >
             {children}

@@ -34,7 +34,7 @@ const MenuItem: React.FC<Props> = ({
                     {price}€
                 </PriceMenu>
             </div>
-            <Bar/>
+            <Bar height={3}/>
         </div>
     )
 };

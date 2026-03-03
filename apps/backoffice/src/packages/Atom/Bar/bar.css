@@ -1,7 +1,16 @@
 .bd-bar {
   width: 100%;
   height: 4px;
-  border-radius: var(--base-border-radius);
-  background-color: var(--black-color);
-  border: 1px solid var(--black-color);
+  border-radius: var(--bar-radius);
+  background-color: var(--bar-bg-color);
+}
+
+.bd-heading.bd-primary {
+  --bar-bg-color: var(--primary-color);
+}
+.bd-heading.bd-secondary {
+  --bar-bg-color: var(--secondary-color);
+}
+.bd-heading.bd-tertiary {
+  --bar-bg-color: var(--tertiary-color);
 }

@@ -12,8 +12,9 @@
 .bd-menu-item-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    margin-bottom: 12px;
 }
 
 .bd-menu-item-content {
