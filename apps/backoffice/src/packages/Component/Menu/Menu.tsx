@@ -1,7 +1,6 @@
 import React from "react";
 import "./menu.css";
 import MenuItem from "../../Molecule/MenuItem/MenuItem";
-import { TitleMenu } from "../..";
 
 interface MenuItem {
     title: string,
